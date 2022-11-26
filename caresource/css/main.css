@@ -34,6 +34,10 @@
   z-index: -1;
 }
 
+.body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   color: white;
   position: fixed;
@@ -48,7 +52,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em 1em;
+  padding: 1em 3em;
 }
 
 header a.logo {
@@ -116,7 +120,7 @@ header .donate:hover {
 .hero .slogan {
   font-size: 2rem;
   width: 50vw;
-  padding-left: 1em;
+  padding-left: 10px;
   text-align: center;
   font-family: Poppins;
   font-weight: 400;
@@ -128,30 +132,66 @@ header .donate:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .hero .img-container .charity-img {
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #949393;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
+}
+
+.hero .img-container .charity-img:hover {
+  width: 230px;
+  height: 230px;
+}
+
+.hero .img-container .bottom {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-page {
-  background-color: #0056D8;
+  background-color: #36598d;
+}
+
+.about-page::-webkit-scrollbar {
+  display: none;
 }
 
 .about-page .about-section {
-  margin-top: 7em;
-  padding: 0em 5em;
+  padding: 2em 5em;
+  border: 2px dashed #c8ff00;
+  margin: 10em 5em;
+  border-radius: 10px;
 }
 
 .about-page .about-section .about-head {
   font-size: 3rem;
-  color: #9c0d25;
+  text-transform: uppercase;
+  color: #220d9c;
+  padding-bottom: .5em;
 }
 /*# sourceMappingURL=main.css.map */
