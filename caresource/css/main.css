@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+  font-family: Poppins;
+}
+
+.body {
+  background-color: #0e0d0d;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .bg-img {
+  width: 100vw;
+  position: fixed;
+  top: 0em;
+  z-index: -1;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 1em;
+}
+
+header a.logo {
+  font-family: Cookie;
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+}
+
+header a.logo span {
+  font-family: Cookie;
+  color: black;
+}
+
+header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 2em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li a:hover {
+  color: white;
+}
+
+header .donate {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .2em 1em;
+}
+
+header .donate:hover {
+  color: white;
+  background-color: black;
+}
+
+.hero {
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .slogan {
+  font-size: 2rem;
+  width: 50vw;
+  padding-left: 1em;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  color: white;
+}
+
+.hero .img-container {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.hero .img-container .charity-img {
+  border-radius: 50%;
+  border: 2px solid white;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.about-page {
+  background-color: #0056D8;
+}
+
+.about-page .about-section {
+  margin-top: 7em;
+  padding: 0em 5em;
+}
+
+.about-page .about-section .about-head {
+  font-size: 3rem;
+  color: #9c0d25;
+}
+/*# sourceMappingURL=main.css.map */
