@@ -84,13 +84,14 @@ header{
     height: auto;
     justify-content: space-between;
     .slogan{
-        font-size: 2rem;
+        font-size: 2.5rem;
         width: 50vw;
         padding-left: 10px;
         text-align: center;
         font-family: Poppins;
         font-weight: 400;
         color: rgb(255, 255, 255);
+        animation: updown 2s infinite;
     }
     .img-container{
         width: 50vw;
@@ -136,5 +137,15 @@ header{
             padding-bottom: .5em;
         }
         
+    }
+}
+
+@keyframes updown {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+
     }
 }

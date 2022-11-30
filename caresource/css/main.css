@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -118,13 +118,15 @@ header .donate:hover {
 }
 
 .hero .slogan {
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 50vw;
   padding-left: 10px;
   text-align: center;
   font-family: Poppins;
   font-weight: 400;
   color: white;
+  -webkit-animation: updown 2s infinite;
+          animation: updown 2s infinite;
 }
 
 .hero .img-container {
@@ -193,5 +195,27 @@ header .donate:hover {
   text-transform: uppercase;
   color: #220d9c;
   padding-bottom: .5em;
+}
+
+@-webkit-keyframes updown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes updown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
