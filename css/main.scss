@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: Poppins;
+}
+
+.body{
+    background-color: rgb(14, 13, 13);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bg-img{
+        width: 100vw;
+        position: fixed;
+        top:0em;
+        z-index: -1;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+header{
+    color: white;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+    a.logo{
+        font-family: Cookie;
+        font-size: 3rem;
+        text-decoration: none;
+        color: white;
+        span{
+            font-family: Cookie;
+            color: black; 
+        }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        
+        li{
+            margin-right: 2em;
+            a{
+                text-decoration:none;
+                color: black;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+    .donate{
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: .2em 1em;
+        &:hover{
+            color: white;
+            background-color: black;  
+        }
+
+    }
+}
+
+.hero{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    .slogan{
+        font-size: 2.5rem;
+        width: 50vw;
+        padding-left: 10px;
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        animation: updown 2s infinite;
+    }
+    .img-container{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(10px);
+        .charity-img{
+            border-radius: 50%;
+            border: 2px solid rgb(148, 147, 147);
+            object-fit: cover;
+            width: 220px;
+            height: 220px;
+            &:hover{
+                width: 230px;
+                height: 230px;
+            }
+        }
+        .bottom{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+}
+.about-page{
+    background-color:#36598d;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .about-section{
+        padding: 2em 5em;
+        border: 2px dashed rgb(200, 255, 0);
+        margin: 10em 5em;
+        border-radius: 10px;
+        .about-head{
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #220d9c;
+            padding-bottom: .5em;
+        }
+        
+    }
+}
+
+@keyframes updown {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+}
